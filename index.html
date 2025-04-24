@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav id="desktop-nav">
+        <div class="logo" style="font-family:cursive;font-weight: bold;text-shadow: 2px 2px  3px gray;">Janani</div>
+        <div>
+            <ul class="nav-link">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Janani</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="togglemenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-link">
+                <li><a href="#about" onclick="togglemenu()">About</a></li>
+                <li><a href="#experience" onclick="togglemenu()">Experience</a></li>
+                <li><a href="#projects" onclick="togglemenu()">Projects</a></li>
+                <li><a href="#contact" onclick="togglemenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="profile-pic">
+            <img src="/assests/cropped_image.png">
+        </div>
+        <div class="profile-text">
+            <p class="text-p1">Hello, I'm</p>
+            <h1 class="title">Janani</h1>
+            <p class="text-p2">An aspiring Software Developer and studying AI&DS</p>
+
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assests/resume-example.pdf')">Download
+                    CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+            </div>
+            <div class="socials-container">
+                <img src="/assests/linkedin.png" alt="linkedin-img" class="icon"
+                    onclick="location.href='https://www.linkedin.com/in/janani7/'" />
+                <img src="/assests/github.png" alt="linkedin-img" class="icon"
+                    onclick="location.href='https://github.com/jann357'" />
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="text-p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="profile-pic">
+                <img src="./assests/download-photoaidcom-greyscale.png" alt="abt-me-pic" class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-container">
+                    <div class="details-container">
+                        <img src="./assests/experience.png" alt="experience" class="icon">
+                        <h3>Experience</h3>
+                        <p>Internship <br />
+                            Frontend Developer</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assests/education.png" alt="education" class="icon">
+                        <h3>Education</h3>
+                        <p>B.Tech., Artificial Intelligence and DataScience</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>Detail-oriented third-year B.Tech student specializing in Artificial Intelligence and Data
+                        Science.Has
+                        a interest in Web Development and experience in machine learning. Seeking an internship
+                        opportunity to apply my skills in data analysis, predictive
+                        modeling, and web development.</p>
+                </div>
+            </div>
+        </div>
+        <img src="./assests/arrow.png" alt="arrow" class="arrow icon" onclick="location.href='./#experience '">
+    </section>
+    <section id="experience">
+        <p class="text-p1">Explore My</p>
+        <h3 class="title">Experience</h3>
+        <div class="experience-details-container">
+            <div class="about-container">
+                <div class="details-container">
+                    <h3 class="experience-sub-title">Frontend Development</h3>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assests/checkmark.png" alt="chechmark" class="icon">
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Experienced</p>
+                            </div>
+
+                        </article>
+                        <article>
+                            <img src="./assests/checkmark.png" alt="chechmark" class="icon">
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assests/checkmark.png" alt="chechmark" class="icon">
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assests/checkmark.png" alt="chechmark" class="icon">
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h3 class="experience-sub-title">Frontend Deveoper</h3>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assests/checkmark.png" alt="chechmark" class="icon">
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assests/checkmark.png" alt="chechmark" class="icon">
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assests/checkmark.png" alt="chechmark" class="icon">
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assests/checkmark.png" alt="chechmark" class="icon">
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assests/arrow.png" alt="arrow" class="arrow icon" onclick="location.href='./#projects'">
+    </section>
+    <section id="projects">
+        <p class="text-p1">Browse My Recent</p>
+        <h3 class="title">Projects</h3>
+        <div class="experience-details-container">
+            <div class="about-container">
+                <div class="details-container color-container">
+                    <div class="project-container">
+                        <img src="./assests/project-1.png" alt="project1" class="project-img">
+                        <h2 class="experience-sub-title">Project One</h2>
+                        <div class="btn-container">
+                            <button class="btn btn-color-2 project-btn" onclick="location.href='...'">Github</button>
+                            <button class=" btn btn-color-1 project-btn" onclick="location.href='...'">Live
+                                Demo</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="project-container">
+                        <img src="./assests/project-2.png" alt="project1" class="project-img">
+                        <h2 class="experience-sub-title project-title">Project Two</h2>
+                        <div class="btn-container">
+                            <button class="btn btn-color-2 project-btn" onclick="location.href='...'">Github</button>
+                            <button class=" btn btn-color-1 project-btn" onclick="location.href='...'">Live
+                                Demo</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assests/arrow.png" alt="arrow" class="arrow icon" onclick="location.href='./#contact'">
+    </section>
+    <br>
+    <br>
+    <section id="contact">
+        <p class="text-p1">Get in touch</p>
+        <h3 class="title">Contact me!</h3>
+        <div class="details-container contact-container">
+            <div class="cont-con">
+                <img src="./assests/email.png" alt="email" class="icon" />
+                <p><a href="mailto:janani0735@gmail.com">janani0735@gmail.com</a></p>
+            </div>
+            <div class="cont-con">
+                <img src="./assests/linkedin.png" alt="linkedin" class="icon" />
+                <p><a href="https://www.linkedin.com/in/janani7/">Connect in LinkedIn</a></p>
+            </div>
+        </div>
+        <footer>
+            <nav id="footer-nav">
+    
+                <div>
+                    <ul class="nav-link">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <p class="text-p1">© 2025 Janani. All Rights Reserved.</p>
+        </footer>
+    </section>
+   
+    <script src="script.js"></script>
+</body>
+</html>
